@@ -1,7 +1,7 @@
 # 0984/21
 # May/June 2020
 
-discount = 10
+discountrate = 0.1
 deviceCode = ['BPCM','BPSH','RPSS','RPLL','YPLS','YPLL','RTMS','RTLM','YTLM','YTLL']
 simCode = ['SMNO','SMPG']
 caseCode = ['CSST','CSLX']
@@ -29,7 +29,7 @@ chargerPrice = [19.99, 15.99]
 
 YesNo = ['Y','N']
 
-# Task One and Two
+# Task One and Two and Three
 
 ordertotal = 0
 discounttotal = 0
@@ -152,10 +152,10 @@ while status is True:
     numDevices = numDevices + 1
 
     if numDevices > 1:
-        discount = round(total * discount / 100)
+        discount = total * discountrate
     else:
         discount = 0
-
+        
     discounttotal = discounttotal + discount    
     ordertotal = ordertotal + total - discount
 
@@ -173,6 +173,6 @@ while status is True:
 
 print('{:<65} ${:7.2f}'.format('Overall Order Total:', ordertotal))
 
-if numDevices > 1:
+if numDevices >= 1:
     print('{:<65} ${:7.2f}'.format('Money saved with discount:', discounttotal))
 

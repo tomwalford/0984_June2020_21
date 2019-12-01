@@ -32,6 +32,7 @@ YesNo = ['Y','N']
 # Task One and Two
 
 ordertotal = 0
+discounttotal = 0
 numDevices = 0
 
 status = True
@@ -154,7 +155,8 @@ while status is True:
         discount = round(total * discount / 100)
     else:
         discount = 0
-        
+
+    discounttotal = discounttotal + discount    
     ordertotal = ordertotal + total - discount
 
     print()
@@ -170,4 +172,7 @@ while status is True:
         status = False
 
 print('{:<65} ${:7.2f}'.format('Overall Order Total:', ordertotal))
+
+if numDevices > 1:
+    print('{:<65} ${:7.2f}'.format('Money saved with discount:', discounttotal))
 

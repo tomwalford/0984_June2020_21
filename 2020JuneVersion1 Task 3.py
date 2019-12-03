@@ -173,6 +173,6 @@ while status is True:
 
 print('{:<65} ${:7.2f}'.format('Overall Order Total:', ordertotal))
 
-if numDevices >= 1:
+if numDevices > 1:
     print('{:<65} ${:7.2f}'.format('Money saved with discount:', discounttotal))
 

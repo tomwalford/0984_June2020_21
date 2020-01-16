@@ -22,7 +22,7 @@ simDesc = ['SIM Free (no SIM card purchased)', 'Pay As You Go (SIM card purchase
 caseDesc = ['Standard', 'Luxury']
 chargerDesc = ['Car', 'Home']
 
-devicePrice = [29.99, 49.99, 199.99, 499.99, 549.99, 659.99, 149.99, 299.99, 499.99, 599.99]
+devicePrice = [29.99, 49.99, 199.99, 499.99, 549.99, 649.99, 149.99, 299.99, 499.99, 599.99]
 simPrice = [0.00, 9.99]
 casePrice = [0.00, 50.00]
 chargerPrice = [19.99, 15.99]
